@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="0.088335">
+    <testcase classname="Alugar Filme" name="Deve alugar um filme com sucesso" time="0.034867">
+        <system-out>
+            <![CDATA[Dado um filme...............................................................passed
+Quando alugar...............................................................passed
+Então o preço do aluguel será R$ 3..........................................passed
+E a data de entrega será em 1 dia...........................................passed
+E o estoque do filme será 1 unidade.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alugar Filme" name="Não deve alugar filme sem estoque" time="0.008273">
+        <system-out>
+            <![CDATA[Dado um filme com estoque de 0 unidades.....................................passed
+Quando alugar...............................................................passed
+Então não será possível por falta de estoque................................passed
+E o estoque do filme será 0 unidade.........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alugar Filme" name="Deve dar condições conforme tipo de aluguel" time="0.007453">
+        <system-out>
+            <![CDATA[Dado um filme com estoque de 2 unidades.....................................passed
+E que o preço de aluguel seja R$ 4..........................................passed
+E que o tipo do aluguel seja extendido......................................passed
+Quando alugar...............................................................passed
+Então o preço do aluguel será R$ 8..........................................passed
+E a data de entrega será em 3 dias..........................................passed
+E a pontuação recebida será de 2 pontos.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alugar Filme" name="Deve dar condições conforme tipo de aluguel 2" time="0.003455">
+        <system-out>
+            <![CDATA[Dado um filme com estoque de 2 unidades.....................................passed
+E que o preço de aluguel seja R$ 4..........................................passed
+E que o tipo do aluguel seja comum..........................................passed
+Quando alugar...............................................................passed
+Então o preço do aluguel será R$ 4..........................................passed
+E a data de entrega será em 1 dias..........................................passed
+E a pontuação recebida será de 1 pontos.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alugar Filme" name="Deve dar condições conforme tipo de aluguel 3" time="0.003222">
+        <system-out>
+            <![CDATA[Dado um filme com estoque de 2 unidades.....................................passed
+E que o preço de aluguel seja R$ 10.........................................passed
+E que o tipo do aluguel seja extendido......................................passed
+Quando alugar...............................................................passed
+Então o preço do aluguel será R$ 20.........................................passed
+E a data de entrega será em 3 dias..........................................passed
+E a pontuação recebida será de 2 pontos.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Alugar Filme" name="Deve dar condições conforme tipo de aluguel 4" time="0.003441">
+        <system-out>
+            <![CDATA[Dado um filme com estoque de 2 unidades.....................................passed
+E que o preço de aluguel seja R$ 5..........................................passed
+E que o tipo do aluguel seja semanal........................................passed
+Quando alugar...............................................................passed
+Então o preço do aluguel será R$ 15.........................................passed
+E a data de entrega será em 7 dias..........................................passed
+E a pontuação recebida será de 3 pontos.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve executar especificação" time="0.006958">
+        <system-out>
+            <![CDATA[Dado que criei o arquivo corretamente.......................................passed
+Quando executá-lo...........................................................passed
+Então a especificação deve finalizar com sucesso............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve incrementar contador" time="0.001847">
+        <system-out>
+            <![CDATA[Dado que o valor do contador é 15...........................................passed
+Quando eu incrementar em 3..................................................passed
+Então o valor do contador será 18...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve incrementar contador 2" time="0.001849">
+        <system-out>
+            <![CDATA[Dado que o valor do contador é 123..........................................passed
+Quando eu incrementar em 35.................................................passed
+Então o valor do contador será 158..........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve calcular atraso na entrega" time="0.007785">
+        <system-out>
+            <![CDATA[Dado que a entrega é dia 05/04/2018.........................................passed
+Quando a entrega atrasar em 2 dias..........................................passed
+Então a entrega será efetuada em 07/04/2018.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve calcular atraso no prazo de entrega da China" time="0.00323">
+        <system-out>
+            <![CDATA[Dado que a entrega é dia 05/04/2018.........................................passed
+Quando a entrega atrasar em 2 meses.........................................passed
+Então a entrega será efetuada em 05/06/2018.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve criar steps genéricos para estes passos" time="0.00367">
+        <system-out>
+            <![CDATA[Dado que o ticket é AF345...................................................passed
+Dado que o valor da passagem é R$ 230,45....................................passed
+Dado que o nome do passageiro é "Fulano da Silva"...........................passed
+Dado que o telefone do passageiro é 9999-9999...............................passed
+Quando criar os steps.......................................................passed
+Então o teste vai funcionar.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Aprender Cucumber" name="Deve reaproveitar os steps &quot;Dado&quot; do cenário anterior" time="0.002285">
+        <system-out>
+            <![CDATA[Dado que o ticket é AB167...................................................passed
+Dado que o ticket especial é AB167..........................................passed
+Dado que o valor da passagem é R$ 1120,23...................................passed
+Dado que o nome do passageiro é "Cicrano de Oliveira".......................passed
+Dado que o telefone do passageiro é 9888-8888...............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

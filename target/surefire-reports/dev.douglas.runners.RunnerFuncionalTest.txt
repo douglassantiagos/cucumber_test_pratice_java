@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dev.douglas.runners.RunnerFuncionalTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.59 s - in dev.douglas.runners.RunnerFuncionalTest
